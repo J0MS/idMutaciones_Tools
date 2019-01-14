@@ -205,6 +205,6 @@ try:
         print ("No arguments detected","\n","Usage:","idMutaciones.py seqFile.fasta")
 
 
-except:
-    print ("Faltal, I/O Failed!")
+except IOError:
+    print('An error occured trying to read the file.')
     print("Args failed",str(len(sys.argv)))
